@@ -11,16 +11,16 @@ import blank from './images/blank.jpg';
 
 
 
-  const width = 8 
-  const candyColors = [
-     blue,
-    green,
-    orange,
-    purple,
-    red,
-    yellow, 
-    
-  ]
+const sweets = 8 
+    const candyColors = [
+        blue,
+        green,
+        orange,
+        purple,
+        red,
+        yellow, 
+        
+    ]
 
   const Candy = () => {
 
@@ -31,11 +31,11 @@ import blank from './images/blank.jpg';
 
     const checkForColumnOfFour = () => {
         for (let i = 0; i <= 39; i++) {
-            const columnOfFour = [i, i + width, i + width * 2, i + width * 3]
-            const decidedColor = currentColorArrangement[i]
+            const columnOfFour = [i, i + sweets, i + sweets * 2, i + sweets * 3]
+            const colorPicker = currentColorArrangement[i]
             const isBlank = currentColorArrangement[i] === blank
 
-            if (columnOfFour.every(square => currentColorArrangement[square] === decidedColor && !isBlank)) {
+            if (columnOfFour.every(square => currentColorArrangement[square] === colorPicker && !isBlank)) {
                 setScoreDisplay((score) => score + 4)
                 columnOfFour.forEach(square => currentColorArrangement[square] = blank)
                 return true
@@ -46,15 +46,15 @@ import blank from './images/blank.jpg';
     const checkForRowOfFour = () => {
         for (let i = 0; i < 64; i++) {
             const rowOfFour = [i, i + 1, i + 2, i + 3]
-            const decidedColor = currentColorArrangement[i]
+            const colorPicker = currentColorArrangement[i]
             const notValid = [5, 6, 7, 13, 14, 15, 21, 22, 23, 29, 30, 31, 37, 38, 39, 45, 46, 47, 53, 54, 55, 62, 63, 64]
             const isBlank = currentColorArrangement[i] === blank
 
             if (notValid.includes(i)) continue
 
-            if (rowOfFour.every(square => currentColorArrangement[square] === decidedColor && !isBlank)) {
+            if (rowOfFour.every(indexNumber => currentColorArrangement[indexNumber] === colorPicker && !isBlank)) {
                 setScoreDisplay((score) => score + 4)
-                rowOfFour.forEach(square => currentColorArrangement[square] = blank)
+                rowOfFour.forEach(indexNumber => currentColorArrangement[indexNumber] = blank)
                 return true
             }
         }
@@ -62,13 +62,13 @@ import blank from './images/blank.jpg';
 
     const checkForColumnOfThree = () => {
         for (let i = 0; i <= 47; i++) {
-            const columnOfThree = [i, i + width, i + width * 2]
-            const decidedColor = currentColorArrangement[i]
+            const columnOfThree = [i, i + sweets, i + sweets * 2]
+            const colorPicker = currentColorArrangement[i]
             const isBlank = currentColorArrangement[i] === blank
 
-            if (columnOfThree.every(square => currentColorArrangement[square] === decidedColor && !isBlank)) {
+            if (columnOfThree.every(indexNumber => currentColorArrangement[indexNumber] === colorPicker && !isBlank)) {
                 setScoreDisplay((score) => score + 3)
-                columnOfThree.forEach(square => currentColorArrangement[square] = blank)
+                columnOfThree.forEach(indexNumber => currentColorArrangement[indexNumber] = blank)
                 return true
             }
         }
@@ -77,15 +77,15 @@ import blank from './images/blank.jpg';
     const checkForRowOfThree = () => {
         for (let i = 0; i < 64; i++) {
             const rowOfThree = [i, i + 1, i + 2]
-            const decidedColor = currentColorArrangement[i]
+            const colorPicker = currentColorArrangement[i]
             const notValid = [6, 7, 14, 15, 22, 23, 30, 31, 38, 39, 46, 47, 54, 55, 63, 64]
             const isBlank = currentColorArrangement[i] === blank
 
             if (notValid.includes(i)) continue
 
-            if (rowOfThree.every(square => currentColorArrangement[square] === decidedColor && !isBlank)) {
+            if (rowOfThree.every(indexNumber => currentColorArrangement[indexNumber] === colorPicker && !isBlank)) {
                 setScoreDisplay((score) => score + 3)
-                rowOfThree.forEach(square => currentColorArrangement[square] = blank)
+                rowOfThree.forEach(indexNumber => currentColorArrangement[indexNumber] = blank)
                 return true
             }
         }
@@ -101,8 +101,8 @@ import blank from './images/blank.jpg';
                 currentColorArrangement[i] = candyColors[randomNumber]
             }
 
-            if ((currentColorArrangement[i + width]) === blank) {
-                currentColorArrangement[i + width] = currentColorArrangement [i]
+            if ((currentColorArrangement[i + sweets]) === blank) {
+                currentColorArrangement[i + sweets] = currentColorArrangement [i]
                 currentColorArrangement[i] = blank
             }
         }
@@ -124,9 +124,9 @@ import blank from './images/blank.jpg';
 
         const validMoves = [
             squareBeingDraggedId - 1,
-            squareBeingDraggedId - width,
+            squareBeingDraggedId - sweets,
             squareBeingDraggedId + 1,
-            squareBeingDraggedId + width
+            squareBeingDraggedId + sweets
         ]
 
         const validMove = validMoves.includes(squareBeingReplacedId)
@@ -151,7 +151,7 @@ import blank from './images/blank.jpg';
 
     const createBoard = () => {
         const randomColorArrangement = []
-        for (let i = 0; i < width * width; i++) {
+        for (let i = 0; i < sweets * sweets; i++) {
             const randomColor = candyColors[Math.floor(Math.random() * candyColors.length)]
             randomColorArrangement.push(randomColor)
         }
