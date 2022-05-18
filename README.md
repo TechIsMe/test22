@@ -9,7 +9,7 @@ Candy Crush Game !
 
 WireFrame 
 
-![candy!](../figmaCandy%20(1).png )
+![candy!](./src/Components/images/candyFigma.PNG)
 
 
  'npm i'
