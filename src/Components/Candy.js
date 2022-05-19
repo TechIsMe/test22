@@ -3,10 +3,10 @@ import './Candy.css';
 import Scores from './Scores';
 import blue from './images/bluef.jpg';
 import red from './images/redf.jpg';
-import green from './images/greenf.jpg'
-import purple from './images/purplef.png'
-import orange from './images/orangef.jpg'
-import yellow from './images/yellowf.jpg'
+import green from './images/greenf.jpg';
+import purple from './images/purplef.png';
+import orange from './images/orangef.jpg';
+import yellow from './images/yellowf.jpg';
 import blank from './images/blank.jpg';
 
 
@@ -76,6 +76,7 @@ const sweets = 8
 
     const checkForRowOfThree = () => {
         for (let i = 0; i < 64; i++) {
+
             const rowOfThree = [i, i + 1, i + 2]
             const colorPicker = currentColorArrangement[i]
             const notValid = [6, 7, 14, 15, 22, 23, 30, 31, 38, 39, 46, 47, 54, 55, 63, 64]
