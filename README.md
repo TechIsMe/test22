@@ -7,7 +7,7 @@
    
    * [Description](#Candy Crush Game !)
    
-   * [What I Learned](#What I learned)
+   * [What I learned ](#What I learned)
 
    * [Author](#Author)
    * [Tools](#Tools)
@@ -18,7 +18,7 @@
 ![candyFigma](https://user-images.githubusercontent.com/93556946/196817408-a1a49a6d-6543-4c04-97ac-8e1c9a90526c.PNG)
 
 
-## Candy Crush Game !
+## Description 
 
 We have a girde of candy and what we need to do is,match the candyies in rows and columns of certain numbers to gain points. In this game of candy crush we have six colors of candy and we will aim to match the coloros of the candys either in row or in columens of three or four.
 
