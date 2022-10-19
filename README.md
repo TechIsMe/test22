@@ -1,5 +1,5 @@
 
-## Candy Crush Game 
+## Candy Crush 
 
 ## Table of contents
 
