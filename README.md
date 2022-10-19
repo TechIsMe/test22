@@ -1,8 +1,12 @@
 
-Candy Crush Game !
-
 ## Candy Crush Game 
 
+## Table of contents
+   * Design
+   * What I Learned
+   * Author
+   * Tools
+   * Deployment
 
 ## Candy Crush Game !
 
