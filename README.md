@@ -4,8 +4,11 @@
 ## Table of contents
 
    * [Design](#![candyFigma](https://user-images.githubusercontent.com/93556946/196817408-a1a49a6d-6543-4c04-97ac-8e1c9a90526c.PNG))
+   
    * [Description](#Candy Crush Game !)
+   
    * [What I Learned](#What I learned)
+
    * [Author](#Author)
    * [Tools](#Tools)
    * [Deployment](#Deployment)
