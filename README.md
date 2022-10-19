@@ -2,11 +2,18 @@
 ## Candy Crush Game 
 
 ## Table of contents
-   * Design
-   * What I Learned
-   * Author
-   * Tools
-   * Deployment
+
+   * [Design](#![candyFigma](https://user-images.githubusercontent.com/93556946/196817408-a1a49a6d-6543-4c04-97ac-8e1c9a90526c.PNG))
+   * [Description](#Candy Crush Game !)
+   * [What I Learned](#What I learned)
+   * [Author](#Author)
+   * [Tools](#Tools)
+   * [Deployment](#Deployment)
+
+## Design
+
+![candyFigma](https://user-images.githubusercontent.com/93556946/196817408-a1a49a6d-6543-4c04-97ac-8e1c9a90526c.PNG)
+
 
 ## Candy Crush Game !
 
@@ -14,11 +21,21 @@ We have a girde of candy and what we need to do is,match the candyies in rows an
 
 ## What I learned 
 
- This project gave me a  great opportunity to polish  my skils in Component Architecture ,State ,Functional Components and Styling(CSS) in React..
+ This project gave me a  great opportunity to polish  my skils in Component Architecture ,State ,Functional Components and Styling(CSS) in React.
+ 
+ ## Tools
+ 
+   * HTML
+   
+   * CSS
+   
+   * REACT
 
 ## Author
 
   * Bruktawit Wolde
+
+  * Website[https://www.linkedin.com/in/bruktawit-wolde-588131219/]
 
 ## Deployment
 
