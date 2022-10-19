@@ -6,12 +6,13 @@
    * [Design](#Design)
    
    * [Description](#Description)
-   
-   * [What I learned](What I learned)
+
+   * [What I learned](#What I learned)
 
    * [Author](#Author)
    * [Tools](#Tools)
    * [Deployment](#Deployment)
+  
 
 ## Design
 
