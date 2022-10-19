@@ -5,7 +5,7 @@
 
    * [Design](#![candyFigma](https://user-images.githubusercontent.com/93556946/196817408-a1a49a6d-6543-4c04-97ac-8e1c9a90526c.PNG))
    
-   * [Description](#Candy Crush Game !)
+   * [Description](#Description)
    
    * [What I learned ](#What I learned)
 
