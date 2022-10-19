@@ -7,7 +7,7 @@
    
    * [Description](#Description)
    
-   * [What I learned](#What I learned)
+   * [What I learned](What I learned)
 
    * [Author](#Author)
    * [Tools](#Tools)
